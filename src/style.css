@@ -3,6 +3,9 @@
 /* Heading styles */
 .heading {
     background-color: #0ba476;
+    border-radius: 10px 10px 70px 10px;
+    width: 50%;
+    margin: auto;
 }
 h1 {
     font-family: 'Arial', sans-serif;
@@ -12,7 +15,7 @@ h1 {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.345);
     text-align: center; /* Center align text */
   }
   
@@ -92,7 +95,8 @@ h1 {
   td {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
-    color: #333; /* Dark grey color */
+    font-weight: bold;
+    color: #007bff; /* Dark grey color */
     padding: 12px;
     text-align: center; /* Center align text */
   }
@@ -113,14 +117,30 @@ h1 {
     color: grey;
 }
 
+.feature-banner{
+    position: relative;
+}
+
 .featured-label {
-    position: relative; /* Position the label absolutely */
-    top: -28px; /* Align the label to the top of the cell */
+    position: absolute; /* Position the label absolutely */
+    top: -40px; /* Align the label to the top of the cell */
     left: 0; /* Align the label to the left of the cell */
-    background-color: #ff0000; /* Red background color */
+    background-color: #ba1e1e; /* Red background color */
     color: #fff; /* White text color */
     padding: 4px 8px; /* Padding for the label */
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 70px 70px;
     width: 10vw;
     margin-left: 15%;
+    z-index: +2;
+  }
+  .outer {
+    position: absolute; /* Position the label absolutely */
+    top: -40px; /* Align the label to the top of the cell */
+    left: 0; /* Align the label to the left of the cell */
+    background-color: #701515; /* Red background color */
+    color: #fff; /* White text color */
+    padding: 4px 8px; /* Padding for the label */
+    border-radius: 10px 0px 0px 0px;
+    width: 11vw;
+    margin-left: 13%;
   }
